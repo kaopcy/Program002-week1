@@ -42,8 +42,15 @@ int main()
 	printf("*******WARNING This program can take only number below 100000.\n");
 	printf("Enter number :");
 	scanf_s("%d", &x);
-	printf("\n\n");
-	loop(x);
+	if (x <= 0)
+	{
+		printf("Error");
+	}
+	else
+	{
+		printf("\n\n");
+		loop(x);
+	}
 	printf("\n=======================================");
 	return 0;
 }
